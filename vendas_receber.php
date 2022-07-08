@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config.php';
+
 //print_r($_SESSION);
 if ((!isset($_SESSION['user']) == true) and (!isset($_SESSION['senha']) == true)) {
   unset($_SESSION['user']);
@@ -192,10 +192,10 @@ $logado = $_SESSION['user'];
       </li>
     
     
-    <div class="profile-details">
-      <div class="profile-content">
-        <!--<img src="image/profile.jpg" alt="profileImg">-->
-      </div>
+      <div class="profile-details">
+     <!-- <div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>-->
       <div class="name-job">
 
         <div class="profile_name">Bem vindo: <?php echo $logado?></div>

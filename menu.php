@@ -2,7 +2,6 @@
 <?php
 session_start();
 include('valida.php');
-include 'config.php';
 include 'conexao.php';
 
 //print_r($_SESSION);
@@ -201,9 +200,9 @@ $logado = $_SESSION['user'];
     
   
     <div class="profile-details">
-      <div class="profile-content">
-        <!--<img src="image/profile.jpg" alt="profileImg">-->
-      </div>
+     <!-- <div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>-->
       <div class="name-job">
         <div class="profile_name">Bem vindo: <?php echo $logado?></div>
         <div class="job"><p class="titlefooter">&copy; Nome da Empresa</p></div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config.php';
+
 //print_r($_SESSION);
 if ((!isset($_SESSION['user']) == true) and (!isset($_SESSION['senha']) == true)) {
   unset($_SESSION['user']);

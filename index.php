@@ -1,5 +1,6 @@
 <?php
-session_start()
+session_start();
+include 'conexao.php';
 ?>
 
 <!DOCTYPE html>
@@ -121,6 +122,16 @@ animation-direction: normal, alternate;
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
+					<?php
+						if (isset($_SESSION['nao_autenticado'])) :
+						?>
+							<div class="alert alert-danger" role="alert">
+								<p>Usuário ou Senha Inválidos!</p>
+							</div>
+						<?php
+						endif;
+						unset($_SESSION['nao_autenticado']);
+						?>
 
 					<div class="container-login100-form-btn">
 						<input type="submit" name="submit" class="login100-form-btn" value="Logar">
@@ -128,6 +139,7 @@ animation-direction: normal, alternate;
 					<div class="text-center p-t-136">
 						<a class="txt2" href="#">
 							Versão 18.05
+							</div>
 					<!-- Botão de voltar redirecionando 
 
 					<a href="#">
@@ -138,16 +150,7 @@ animation-direction: normal, alternate;
 						
 						<br> 
 						-->
-						<?php
-						if (isset($_SESSION['nao_autenticado'])) :
-						?>
-							<div class="alert alert-danger" role="alert">
-								<p>Usuário ou Senha Inválidos!</p>
-							</div>
-						<?php
-						endif;
-						unset($_SESSION['nao_autenticado']);
-						?>
+					
 
 
 

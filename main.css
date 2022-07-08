@@ -1,0 +1,225 @@
+body{
+    background-color:#dee2e6;
+  
+}
+ table.dataTable thead {
+    background: #007bff;
+    color:white;
+    width:50px;
+    width:70em;
+    font-size: 11px;
+   
+ 
+}
+
+/* Desabilita o Title dos Icons */
+ion-icon {
+ pointer-events: none;
+}
+   
+.caja{
+  /* border: 1px solid; */
+  padding: 10px;
+  box-shadow: 10px 10px 50px 1px #7c7c81;
+  border-radius: 10px;
+  
+
+  
+}
+
+th { white-space:nowrap; }
+div.dataTables_wrapper {
+    margin: 0 auto;
+    font-family: tahoma;
+  
+ 
+    position: relative;
+    clear: both;
+    *zoom: 1;
+    zoom: 1;
+
+
+}
+   td { white-space:pre-line; }
+    div.dataTables_wrapper {
+        margin: 0 auto;
+      
+        font-family: tahoma;
+        font-size: 10px;
+     
+        position: relative;
+        clear: both;
+        *zoom: 1;
+        zoom: 1;
+       
+      
+    }
+ 
+    div.container {
+        width: 150%;
+        
+   }
+.cardBox .card .numbers {
+  position: relative;
+ font-weight: bolder;
+  
+}
+
+.dashboard{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 300px;
+	height: 100px;
+	padding: 20px;
+
+	position: absolute;
+	top: 80%;
+	left: 50%;
+
+	margin: -70px 0 0 -170px;
+}
+
+footer.fixar-rodape{
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    color: white;
+    width: 270px; 
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    
+  }
+ /*---------------FOOTER FIXO-----------------------------------*/
+  footer.fixar-rodape{
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  color: white;
+  width: 270px; 
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+}
+
+.btn {
+    background-color: #1E90FF;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover, .dropbtn:focus {
+    background-color: #4169E1;
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  
+  
+
+     /* Texto Aparacer ao passar mouse no card*/
+     .button {
+      display: inline-block;
+      position: relative;
+      padding: 8px 25px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      color: #ffffff;
+      font-size: 24px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: none;
+      vertical-align: middle;
+      letter-spacing: 2px;
+      overflow: hidden;
+    }
+
+    .button span {
+        transition: 0.6s;
+        transition-delay: 0.2s;
+    }
+    .button:before,
+    .button:after {
+        content: '';
+        position: absolute;
+        top: 0.67em;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: .4s,opacity .6s;
+    }
+
+    /* :before */
+    .button:before {
+        content: attr(data-hover);
+        transform: translate(-150%,0);
+    }
+    /* :after */
+    .button:after {
+      content: attr(data-active);
+      transform: translate(150%,0);
+    }
+    /* Span on :hover and :active */
+    .button:hover span,
+    .button:active span {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    /* :before pseudo-element on :hover 
+        and :after pseudo-element on :active */
+    .button:hover:before,
+    .button:active:after {
+        opacity: 1;
+        transform: translate(0,0);
+        transition-delay: .4s;
+    }
+    .button:active:before {
+        transform: translate(-150%,0);
+        transition-delay: 0s;
+    }

@@ -20,7 +20,7 @@
 PARA EXECUTAR O SISTEMA.
 1. Baixe ou extraia os arquivos numa pasta ou clone no git.
 
-2. Instale um servidor apache na sua máquina + um SGBD da sua escolha (RECOMENDO XAMPP).
+2. Instale um servidor apache na sua máquina + um SGBD da sua escolha COM ESTRURURA MYSQL (RECOMENDO XAMPP).
 
 3. IMPORTE O BD QUE ESTÁ NA BASTA BANCO.
 4. CONFIGURE AS CONEXÃO COM O BANCO NOS ARQUIVOS conexao.php bd/conexion.php e model.php model_receber.php

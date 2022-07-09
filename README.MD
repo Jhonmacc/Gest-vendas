@@ -23,7 +23,7 @@ PARA EXECUTAR O SISTEMA.
 2. Instale um servidor apache na sua máquina + um SGBD da sua escolha COM ESTRURURA MYSQL (RECOMENDO XAMPP).
 
 3. IMPORTE O BD QUE ESTÁ NA BASTA BANCO.
-4. CONFIGURE AS CONEXÃO COM O BANCO NOS ARQUIVOS conexao.php bd/conexion.php e model.php model_receber.php
+4. CONFIGURE AS CONEXÃO COM O BANCO NOS ARQUIVOS conexao.php bd/conexion.php e model.php model_receber.php config.php
 
 
 5. Em seguida recomendo usar o VScode Editor e instale a extensão chamada PHP server em seguida clique com o botão direito do mouse em um arquivo PHP, pode ser o menu.php e clique em PHP SERVER: Server Project um servidor irá subir o projeto no seu navegador e pronto.
